@@ -14,5 +14,8 @@ app.controller("actorCtrl", function($scope) {
     new Actor("Robin", "Wright", "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU0NTc4MzEyOV5BMl5BanBnXkFtZTcwODY0ODkzMQ@@._V1_UY317_CR4,0,214,317_AL_.jpg", "http://www.imdb.com/name/nm0000705/"),
     new Actor("Kevin", "Costner", "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0MDU1OTEyNF5BMl5BanBnXkFtZTgwNjI0MTk2MDE@._V1_UY317_CR0,0,214,317_AL_.jpg", "http://www.imdb.com/name/nm0000126/?ref_=nv_sr_6"),
     new Actor("Robin", "Williams", "https://images-na.ssl-images-amazon.com/images/M/MV5BNTYzMjc2Mjg4MF5BMl5BanBnXkFtZTcwODc1OTQwNw@@._V1_UX214_CR0,0,214,317_AL_.jpg", "http://www.imdb.com/name/nm0000245/?ref_=nv_sr_3")];
-                  
+    
+    $scope.sortByFirstName = function() {
+        $scope.orderProp = "firstName";
+    }
   });
