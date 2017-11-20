@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <script src="app.js"></script>
   <script src="actorCtrl.js"></script>
+  <script src="movieCtrl.js"></script>
+  <script src="movieDirective.js"></script>
 </head>
 
 <body>
@@ -35,6 +37,10 @@
     </div>
     </div>
     </div>
+  </div>
+  <div class="movies" ng-controller="movieCtrl">
+  <h1> Top 10 movies></h1>
+  <my-movie ng-repeat="movie in movies"></my-movie>
   </div>
 </body>
 
