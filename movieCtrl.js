@@ -1,6 +1,5 @@
 app.controller("movieCtrl", function ($scope, $http) {
-    
-        // Car Constructor
+
         function Movie(name, time, director,actors, link) {
             this.name = name;
             this.time = time;
@@ -14,7 +13,5 @@ app.controller("movieCtrl", function ($scope, $http) {
         }, function myError(response) {
             alert("error" + JSON.stringify(response.status));
           })
-          $scope.order = function() {
-            $scope.orderProp = "first";
-        } 
+
         });

@@ -5,6 +5,10 @@
         </a> 
         <h3>Director:{{movie.director}}</h3>
         <h3>Duration: {{movie.time}}</h3>
-        <h3>Actors:{{movie.actors}}</h3>
+        <h3>Actors:
+        <span ng-repeat="actor in movie.actors">
+        {{actor}}
+        </span>
+        </h3>
         <br>        
-        </div>
+</div>
