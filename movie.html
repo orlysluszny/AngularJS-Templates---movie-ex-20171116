@@ -1,6 +1,10 @@
 <div ng-repeat="movie in movies " class="column col-xs-12 col-sm-10 col-md-5 col-lg-4">
+        <h2>Movie Name: </h2>
         <a href={{movie.link}} target="_blank">
-        The name of the movie :{{movie.name}}
+        <h3>{{movie.name}}</h3>
         </a> 
-        {{movie.director+' '+movie.time+' '+movie.actors}}
+        <h3>Director:{{movie.director}}</h3>
+        <h3>Duration: {{movie.time}}</h3>
+        <h3>Actors:{{movie.actors}}</h3>
+        <br>        
         </div>
